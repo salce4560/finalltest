@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul id="ull">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+                <p>event click Lorem ipsum dolor, sit amet consectetur adipisicing elit. In fugit corporis quam
+                    perspiciatis qui
+                    harum earum recusandae maiores! Optio, quae!</p>
+
+                <p id="dblclickP">event dbclick Lorem ipsum dolor, sit amet consectetur adipisicing elit. In fugit
+                    corporis quam
+                    perspiciatis qui
+                    harum earum recusandae maiores! Optio, quae!</p>
+
+                <p id="oneP">one event Lorem ipsum dolor, sit amet consectetur adipisicing elit. In fugit
+                    corporis quam
+                    perspiciatis qui
+                    harum earum recusandae maiores! Optio, quae!</p>
+
+                <p id="mouseenterP">event mouseenter Lorem ipsum dolor, sit amet consectetur adipisicing elit. In fugit
+                    corporis quam
+                    perspiciatis qui
+                    harum earum recusandae maiores! Optio, quae!</p>
+
+                <p id="mouseoutP">event mouseout Lorem ipsum dolor, sit amet consectetur adipisicing elit. In fugit
+                    corporis quam
+                    perspiciatis qui
+                    harum earum recusandae maiores! Optio, quae!</p>
+
+
+                <p id="mouseEvent">mouseEvent mouseenter mouseout Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. In fugit
+                    corporis quam
+                    perspiciatis qui
+                    harum earum recusandae maiores! Optio, quae!</p>
+
+
+                <p id="hoverEvent">hoverEvent hoverEnter hoverOut Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. In fugit
+                    corporis quam
+                    perspiciatis qui
+                    harum earum recusandae maiores! Optio, quae!</p>
+                    <button id="but">click</button>
+                    <button id="butt">add</button>
+            </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat beatae eum eius ullam adipisci officiis, perspiciatis soluta culpa, commodi perferendis facilis repellendus recusandae! Excepturi minima pariatur saepe velit sed.</p>
+        </div>
+
+    </div>   
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, repellat beatae eum eius ullam adipisci officiis, perspiciatis soluta culpa, commodi perferendis facilis repellendus recusandae! Excepturi minima pariatur saepe velit sed.</p>
+
+
+    <!-- 先載入 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+    <!-- 先載入 END-->
+
+    <script>
+            $(document).ready(function () {
+            // append vs prepend
+            // 內部插入
+            $('#but').on('click', function () {
+             $(this).siblings().first().filter('ul').toggleClass('text-danger');
+                // cloneTr = $('#myTable').find('tbody').find('tr').last().clone();
+                // $('#myTable').find('tbody').find('tr').last().after(cloneTr);
+                // $('#myTable').find('tbody').find('tr').last().find('td').empty().text('55688');
+                
+            });
+            $('#butt').on('click', function () {
+                cloneli = $('#ull').find('li').last().clone();
+                $('#ull').find('li').last().after(cloneli);
+                
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
