@@ -135,18 +135,10 @@
         </div>
     </div>
 
-
-
-
-
-
-
-
+    <a href="#" class="toTop">top</a>
 
     <!-- 先載入 -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script src= "https://code.jquery.com/jquery-3.3.1.min.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
@@ -172,7 +164,10 @@
                 $(this).css('background-image', 'url(https://picsum.photos/id/237/200/300)');
             })
 
-
+        $('.toTop').on('click', function () {
+       $('html,body').animate({ // 有些瀏覽器只支援html，有些只支援body 所以兩個都寫進去
+         scrollTop: 0, }, 700)
+        });
 
         })
 
