@@ -1,3 +1,10 @@
+<?php
+include_once "base.php";
+$Title=new DB('title');
+$rows=$Title->find(3);
+echo $rows;
+?>
+<img src="../img/<?= $rows['img']?>" alt="">
 <div id="space">
         <p id="space2">salce hsieh <br>Portfolio</p>
         <div id="space1">
@@ -5,7 +12,6 @@
 
         </div>
     </div>
-
 
 <div>
 
@@ -33,7 +39,8 @@
     <div class="row justify-content-around">
         <div class="col-7" id="dog">
             <div class="picture" id="mouseenterr"></div>
-            <img src="./img/<?=$row['img']?>" alt="">
+            <img src="../img/<?=$rows['img']?>" alt="">
+            <img src="../img/<?=$rows['img']?>" alt="">
             <p>With supporting text below as a natural lead-in to additional content.</p>
         </div>
         <div class="col-4" id="dogg">
@@ -109,3 +116,4 @@
         })
 
     </script>
+
