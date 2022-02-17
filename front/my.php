@@ -2,6 +2,7 @@
 include_once "base.php";
 $Title=new DB('title');
 $rows=$Title->find(3);
+echo dd($rows);
 echo $rows;
 ?>
 <img src="../img/<?= $rows['img']?>" alt="">
