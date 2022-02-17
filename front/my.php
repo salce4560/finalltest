@@ -33,6 +33,7 @@
     <div class="row justify-content-around">
         <div class="col-7" id="dog">
             <div class="picture" id="mouseenterr"></div>
+            <img src="./img/<?=$row['img']?>" alt="">
             <p>With supporting text below as a natural lead-in to additional content.</p>
         </div>
         <div class="col-4" id="dogg">
