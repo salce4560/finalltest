@@ -12,7 +12,8 @@ $birthday=$_POST['birthday'];
 $sql_account="insert into `account`(`account`,`password`,`mail`) values('$account','$password','$mail')";
 $sql_member="insert into `member`(`name`,`address`,`mobile`,`birthday`) values('$name','$address','$mobile','$birthday')";
 
-$dsn="mysql:host=localhost;charset=utf8;dbname=pri";
+// $dsn="mysql:host=localhost;charset=utf8;dbname=pri";
+$dsn="mysql:host=localhost;charset=utf8;dbname=s1100415";
 $pdo=new PDO($dsn,'root','');
 
 
